@@ -16,7 +16,7 @@
 ##   Details 
 ***********************
 
-###### extr_choice (extraction choice):
+### extr_choice (extraction choice):
  We can pass multiple extraction choices. For instance, To extract data with site-1 as initial excitation, 
  pass extr_choice = 'site-1'. For extraction of site-6 data, 
  pass extr_choice = 'site-6' and similarly for site-8 data pass 'site-8'. 
