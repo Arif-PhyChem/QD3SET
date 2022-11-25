@@ -6,11 +6,11 @@
 ###### From qd3set module we import qddset class.
 ###### parameter details are
 
- extr_choice: str
- methodType: str
- FMOtype:  str
- dataPath: str
- Nsites: int
+ extr_choice: str \\
+ methodType: str  \\
+ FMOtype:  str  \\
+ dataPath: str  \\
+ Nsites: int  \\
 
 #***********************
 #   Detail 
