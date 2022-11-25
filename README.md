@@ -48,7 +48,7 @@ param = {'extr_choice': 'site-1', \
         }
    
 ### Pass the param
-qddset = qddset(**param) #  initializing parameters
+qddset = qddset(**param) #  initializing parameters \
 output = qddset.extract() # extracting the data
 
 #***********************
