@@ -38,12 +38,13 @@
 ### Nsites (number of sites in FMO case)
  it can be 7, 8, or 24 (for trimer)
 
-param = {'extr_choice': 'site-1',
-        'systemType': 'FMO',
-        'methodType': 'HEOM', 
-        'FMOtype' : 'II', # matters only in LTLME case for 7-sites and 8-sites FMO
-        'dataPath': 'alexei_HEOM_data/npy_data',
-        'Nsites': 8,  # only wanted for FMO 
+### Defining all parameters 
+param = {'extr_choice': 'site-1',\
+        'systemType': 'FMO',\
+        'methodType': 'HEOM',\ 
+        'FMOtype' : 'II', # matters only in LTLME case for 7-sites and 8-sites FMO\
+        'dataPath': 'alexei_HEOM_data/npy_data',\
+        'Nsites': 8,  # only wanted for FMO \
         }
 qddset = qddset(**param) #  initializing parameters
 output = qddset.extract() # extracting the data
