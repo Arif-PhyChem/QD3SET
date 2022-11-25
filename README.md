@@ -56,12 +56,12 @@ output = qddset.extract() # extracting the data
 ***********************
 
  If the extr_choice : cal_details, then we only get calculation details and Hamiltonian 
- ####print(output.details and output.H)
+ #### print(output.details and output.H)
 
  If extr_choice is some other choice, then we get the following data:
- ####output.details for calculation details
- ####output.H for Hamiltonian
- ####output.N_trajs to see the number of trajectories
+ #### output.details for calculation details
+ #### output.H for Hamiltonian
+ #### output.N_trajs to see the number of trajectories
  output.gamma to see the values of gamma (cutoff frequencies of bath)
  output.lamb to see the values of lambda (system bath coupling strengths)
  output.temp to see the values of temperature
