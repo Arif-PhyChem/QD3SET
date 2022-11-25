@@ -17,20 +17,20 @@ In extract.py, we demonstrate how to use this package for extraction of data
 
 ### extr_choice (extraction choice):
  We can pass multiple extraction choices. For instance, To extract data with site-1 as initial excitation, 
- pass extr_choice = 'site-1'. For extraction of site-6 data, 
- pass extr_choice = 'site-6' and similarly for site-8 data pass 'site-8'. 
- To extract all data, just pass extr_choice = 'all'. The default choice is 'cal_details' which 
- only shows calculation details. For spin-boson model, extr_choices are 'all', 'sym', 'asym', and 'cal_details'.
+ pass ```extr_choice = 'site-1'```. For extraction of site-6 data, 
+ pass ```extr_choice = 'site-6'``` and similarly for site-8 data pass 'site-8'. 
+ To extract all data, just pass ```extr_choice = 'all'```. The default choice is 'cal_details' which 
+ only shows calculation details. For spin-boson model, extr_choices are ```'all', 'sym', 'asym', and 'cal_details'```.
 
 ### systemType (system type): 
-Pass 'SB' for spin-boson and 'FMO' for FMO complex
+Pass ```'SB'``` for spin-boson and ```'FMO'``` for FMO complex
 
 ### methodType (method type):
-Pass 'HEOM' or 'LTLME' for the extraction of the corresponding data
+Pass ```'HEOM'``` or ```'LTLME'``` for the extraction of the corresponding data
 
 ### FMOtype: (Type of FMO):
  In our dataset, we have generated LTLME data with two Hamiltonians for both 
- 7-site and 8-site FMO. Here we represent them as I and II. check output.details
+ 7-site and 8-site FMO. Here we represent them as ```I``` and ```II```. check ```output.details```
  for more
 
 ### dataPath (path to data directory):
