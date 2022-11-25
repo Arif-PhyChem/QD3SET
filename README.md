@@ -1,5 +1,6 @@
 # QDDSET
- # This package is provided to make easy the extraction of data from our dataset QDDSET-1: The dataset 
+## This package is provided to make easy the extraction of data from our dataset QDDSET-1. Our QDDSET-1 contains trajectories propagated for reduced density matrix of spin-boson model and FMO complex. Two methods were used: Local-thermalizing Lindblad Equation of Motion (LTLME) and Hierarachical Equations of Motion (HEOM). For more details, please read our article " Arif Ullah, Luis E. Herrera Rodriguez, Pavlo O. Dral, and Alexei A. Kananenka, 
+QDDSET-1: A Quantum Dissipative Dynamics Dataset.
 # From qd3set module we import qddset class.
 
 # parameter details
