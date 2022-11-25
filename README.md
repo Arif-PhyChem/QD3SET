@@ -84,4 +84,4 @@ output = qddset.extract() # extracting the data
 
 ```print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp)```
 ```data = list(output.data.values())```
-```print(data[0])```  The 1st trajectory
+```print(data[0])```  print the 1st trajectory
