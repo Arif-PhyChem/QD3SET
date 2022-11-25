@@ -55,8 +55,7 @@ output = qddset.extract() # extracting the data
 ###  Output details
 ***********************
 
- If the extr_choice : cal_details, then we only get calculation details and Hamiltonian
- print(output.details and output.H)
+ If the extr_choice : cal_details, then we only get calculation details and Hamiltonian ####print(output.details and output.H)
 
  If extr_choice is some other choice, then we get the following data:
   output.details for calculation details
