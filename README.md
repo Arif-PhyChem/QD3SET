@@ -46,7 +46,8 @@ param = {'extr_choice': 'site-1', \
         'dataPath': 'HEOM_data',\
         'Nsites': 8, \
         }
-        
+   
+### Pass the param
 qddset = qddset(**param) #  initializing parameters
 output = qddset.extract() # extracting the data
 
