@@ -1,15 +1,15 @@
 # QDDSET-1
 **This package is provided to make easy the extraction of data from our dataset QDDSET-1. Our QDDSET-1 contains trajectories propagated for reduced density matrix of spin-boson model and FMO complex. Two methods were used: Local-thermalizing Lindblad Equation of Motion (LTLME) and Hierarachical Equations of Motion (HEOM). For more details, please read our article " Arif Ullah, Luis E. Herrera Rodriguez, Pavlo O. Dral, and Alexei A. Kananenka, QDDSET-1: A Quantum Dissipative Dynamics Dataset.**
 
-#### In extract.py, we demonstrate how to use this package for extraction of data
+In extract.py, we demonstrate how to use this package for extraction of data
 
-#### From qd3set module import qddset class.
-#### Parameters to pass are
- extr_choice: str \
- methodType: str  \
- FMOtype:  str  \
- dataPath: str  \
- Nsites: int  
+**From qd3set module import qddset class.
+### Parameters to pass are
+ **extr_choice:** str \
+ **methodType:** str  \
+ **FMOtype:**  str  \
+ **dataPath:** str  \
+ **Nsites:** int  
 
 ***********************
 ##   Details 
