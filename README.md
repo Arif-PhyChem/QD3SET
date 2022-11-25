@@ -23,19 +23,19 @@
  only shows calculation details. For spin-boson model, extr_choices are 'all', 'sym', 'asym', and 'cal_details'.
 
 ### systemType (system type): 
- Pass 'SB' for spin-boson and 'FMO' for FMO complex
+Pass 'SB' for spin-boson and 'FMO' for FMO complex
 
 ### methodType (method type):
- Pass 'HEOM' or 'LTLME' for the extraction of the corresponding data
+Pass 'HEOM' or 'LTLME' for the extraction of the corresponding data
 
 ### FMOtype: (Type of FMO):
  In our dataset, we have generated LTLME data with two Hamiltonians for both 
  7-site and 8-site FMO. Here we represent them as I and II. check output.details
  for more
 
-### dataPath (path to data directory)
+### dataPath (path to data directory):
 
-### Nsites (number of sites in FMO case)
+### Nsites (number of sites in FMO case):
  it can be 7, 8, or 24 (for trimer)
 
 ### Defining all parameters 
@@ -44,8 +44,9 @@ param = {'extr_choice': 'site-1',\
         'methodType': 'HEOM',\ 
         'FMOtype' : 'II', # matters only in LTLME case for 7-sites and 8-sites FMO\
         'dataPath': 'alexei_HEOM_data/npy_data',\
-        'Nsites': 8,  # only wanted for FMO \
+        'Nsites': 8,  # only wanted for FMO 
         }
+        
 qddset = qddset(**param) #  initializing parameters
 output = qddset.extract() # extracting the data
 
