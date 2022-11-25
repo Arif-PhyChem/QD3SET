@@ -15,12 +15,12 @@ In extract.py, we demonstrate how to use this package for extraction of data
 ##   Details 
 ***********************
 
-### extr_choice (extraction choice):
+### ```extr_choice``` (extraction choice):
  We can pass multiple extraction choices. For instance, To extract data with site-1 as initial excitation, 
  pass ```extr_choice = 'site-1'```. For extraction of site-6 data, 
  pass ```extr_choice = 'site-6'``` and similarly for site-8 data pass 'site-8'. 
  To extract all data, just pass ```extr_choice = 'all'```. The default choice is 'cal_details' which 
- only shows calculation details. For spin-boson model, extr_choices are ```'all', 'sym', 'asym', and 'cal_details'```.
+ only shows calculation details. For spin-boson model, extr_choices are ```'all'```, ```'sym'```, ```'asym'```, and ```'cal_details'```.
 
 ### systemType (system type): 
 Pass ```'SB'``` for spin-boson and ```'FMO'``` for FMO complex
