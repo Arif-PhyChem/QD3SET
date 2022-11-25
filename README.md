@@ -82,6 +82,8 @@ output = qddset.extract() # extracting the data
  ```data = list(output.data.values())``` makes the trajectories accessible. With ```data[i]```, we
  access the ith trajectory
 
+### To print the output 
+
 ```print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp)```
 
 ```data = list(output.data.values())```
