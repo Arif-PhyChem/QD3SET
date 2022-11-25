@@ -65,18 +65,23 @@ output = qddset.extract() # extracting the data
  
  ```output.details``` for calculation details
  
- ```output.H`` for Hamiltonian
+ ```output.H``` for Hamiltonian
  
  ```output.N_trajs``` to see the number of trajectories
  
- output.gamma to see the values of gamma (cutoff frequencies of bath)
- output.lamb to see the values of lambda (system bath coupling strengths)
- output.temp to see the values of temperature
- output.epsilon to see the values of energy difference in the case of spin-boson model
- output.Delta  to see the values of coupling strength between the two states in spin-boson model
- data = list(output.data.values()) makes the trajectories accessible. With data[i], we
+ ```output.gamma``` to see the values of gamma (cutoff frequencies of bath)
+ 
+ ```output.lamb``` to see the values of lambda (system bath coupling strengths)
+ 
+ ```output.temp``` to see the values of temperature
+ 
+ ```output.epsilon``` to see the values of energy difference in the case of spin-boson model
+ 
+ ```output.Delta```  to see the values of coupling strength between the two states in spin-boson model
+ 
+ ```data = list(output.data.values())``` makes the trajectories accessible. With ```data[i]```, we
  access the ith trajectory
 
-print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp)
-data = list(output.data.values())
-print(data[0])
+```print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp)```
+```data = list(output.data.values())```
+```print(data[0])```  The 1st trajectory
