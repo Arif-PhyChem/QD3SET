@@ -3,7 +3,7 @@
 
 In extract.py, we demonstrate how to use this package for extraction of data
 
-**From qd3set module import qddset class.
+*From qd3set module import qddset class.*
 ### Parameters to pass are
  **extr_choice:** str \
  **methodType:** str  \
