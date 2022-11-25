@@ -3,9 +3,8 @@
 
 ###### In extract.py, we demonstrate how to use this package for extraction of data
 
-###### From qd3set module we import qddset class.
-## parameter details are:
-
+###### From qd3set module import qddset class.
+###### Parameters to pass are
  extr_choice: str \
  methodType: str  \
  FMOtype:  str  \
