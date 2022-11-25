@@ -56,20 +56,19 @@ output = qddset.extract() # extracting the data
 ***********************
 
  If the extr_choice : cal_details, then we only get calculation details and Hamiltonian
+ print(output.details and output.H)
 
-#### print(output.details and output.H)
-
-# If extr_choice is some other choice, then we get the following data
-#  output.details for calculation details
-#  output.H for Hamiltonian
-#  output.N_trajs to see the number of trajectories
-# output.gamma to see the values of gamma (cutoff frequencies of bath)
-# output.lamb to see the values of lambda (system bath coupling strengths)
-# output.temp to see the values of temperature
-# output.epsilon to see the values of energy difference in the case of spin-boson model
-# output.Delta  to see the values of coupling strength between the two states in spin-boson model
-# data = list(output.data.values()) makes the trajectories accessible. With data[i], we
-# access the ith trajectory
+ If extr_choice is some other choice, then we get the following data:
+  output.details for calculation details
+  output.H for Hamiltonian
+  output.N_trajs to see the number of trajectories
+ output.gamma to see the values of gamma (cutoff frequencies of bath)
+ output.lamb to see the values of lambda (system bath coupling strengths)
+ output.temp to see the values of temperature
+ output.epsilon to see the values of energy difference in the case of spin-boson model
+ output.Delta  to see the values of coupling strength between the two states in spin-boson model
+ data = list(output.data.values()) makes the trajectories accessible. With data[i], we
+ access the ith trajectory
 
 print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp)
 data = list(output.data.values())
