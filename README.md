@@ -41,9 +41,9 @@ Pass 'HEOM' or 'LTLME' for the extraction of the corresponding data
 ### Defining all parameters 
 param = {'extr_choice': 'site-1', \
         'systemType': 'FMO', \
-        'methodType': 'HEOM', \ 
-        'FMOtype' : 'II', \ 
-        'dataPath': 'HEOM_data', \
+        'methodType': 'HEOM',\ 
+        'FMOtype' : 'II',\ 
+        'dataPath': 'HEOM_data',\
         'Nsites': 8, \
         }
         
