@@ -39,14 +39,15 @@ Pass 'HEOM' or 'LTLME' for the extraction of the corresponding data
  it can be 7, 8, or 24 (for trimer)
 
 ### Defining input parameters 
-```param = {'extr_choice': 'site-1', 
+```
+param = {'extr_choice': 'site-1', 
         'systemType': 'FMO', 
         'methodType': 'HEOM',
         'FMOtype' : 'II',
         'dataPath': 'HEOM_data',
         'Nsites': 8, 
         }
-        ```
+ ```       
    
 ### Pass the param
 ```
