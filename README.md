@@ -42,9 +42,9 @@ Pass 'HEOM' or 'LTLME' for the extraction of the corresponding data
 param = {'extr_choice': 'site-1',\
         'systemType': 'FMO',\
         'methodType': 'HEOM',\ 
-        'FMOtype' : 'II', # matters only in LTLME case for 7-sites and 8-sites FMO\
-        'dataPath': 'alexei_HEOM_data/npy_data',\
-        'Nsites': 8,  # only wanted for FMO 
+        'FMOtype' : 'II', \ 
+        'dataPath': 'HEOM_data',\
+        'Nsites': 8, \
         }
         
 qddset = qddset(**param) #  initializing parameters
