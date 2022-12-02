@@ -15,7 +15,7 @@ provides details about the calculations. \n \n  From the output of the function,
 as: \'output.data\' (for trajectories), \'output.N_trajs\' (total number of trajectories), \
 \'output.epsilon\' (energy difference between the two states), \'output.Delta\' (interaction strength between the two states)  \
 ,\'output.gamma\' (the cutoff frequencies for all trajectories), \'output.lamb\' (the system-bath \
-coupling strengths for all trajectories) and the \'output.temp\' (inverse temperature values for all trajectories).\
+coupling strengths for all trajectories) and the \'output.beta\' (inverse temperature values for all trajectories).\
 \n \n  It is worth-emphasizing that \'output.data\' is a dictionary and to extract the data, you can use \
 \'xyz=list(output.data.values())\', where \'xyz[i]\' gives you the ith trajectory \
 corresponding to the ith value in the epsilon, Delta, gamma ,lamb and  temp (all parameters are in atomic units).\

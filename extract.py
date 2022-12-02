@@ -39,11 +39,11 @@ from dataset import qddset
 # Nsites (number of sites in FMO case)
 # it can be 7, 8, or 24 (for trimer)
 
-param = {'extr_choice': 'site-1',
-        'systemType': 'FMO',
+param = {'extr_choice': 'asym',
+        'systemType': 'SB',
         'methodType': 'HEOM', 
         'FMOtype' : 'II', # matters only in LTLME case for 7-sites and 8-sites FMO
-        'dataPath': 'alexei_HEOM_data/npy_data',
+        'dataPath': 'heom_sb/data',
         'Nsites': 8,  # only wanted for FMO 
         }
 qddset = qddset(**param) #  initializing parameters
@@ -69,6 +69,6 @@ output = qddset.extract() # extracting the data
 # data = list(output.data.values()) makes the trajectories accessible. With data[i], we
 # access the ith trajectory
 
-print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp)
+print(output.details, output.H, output.epsilon, output.Delta, output.N_trajs, output.gamma, output.lamb, output.beta)
 data = list(output.data.values())
 print(data[0])

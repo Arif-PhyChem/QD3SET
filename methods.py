@@ -22,16 +22,16 @@ def heom_sb(extr_choice: str, dataPath: str):
             for files in glob.glob(datapath):
                 file_count +=  1
         if extr_choice == 'sym':
-            datapath=dataPath + '/*wda-0*'
+            datapath=dataPath + '/*epsilon-0*'
             for files in glob.glob(datapath):
                 file_count +=  1
         if extr_choice == 'asym':
-            datapath=dataPath + '/*wda-1*'
+            datapath=dataPath + '/*epsilon-1*'
             for files in glob.glob(datapath):
                 file_count +=  1
         gamma = np.zeros((file_count), dtype=float)
         lamb = np.zeros((file_count), dtype=float)
-        temp = np.zeros((file_count), dtype=float)
+        beta = np.zeros((file_count), dtype=float)
         epsilon = np.zeros((file_count), dtype=float)
         Delta = np.zeros((file_count), dtype=float)
         j = 0
@@ -52,12 +52,12 @@ def heom_sb(extr_choice: str, dataPath: str):
             y = re.split(r'_', x[4])
             gamma[j] = y[0]
             y = re.split(r'.n', x[5])
-            temp[j] = y[0]
+            beta[j] = y[0]
             j += 1
         details = cdet.heom_sb_details()
         H = ['epsilon', 'Delta', 'Delta*', '0']
-        sbm = namedtuple('sbm', 'details H N_trajs epsilon Delta gamma lamb temp data')
-        sb = sbm(details, H, file_count, epsilon, Delta, gamma, lamb, temp, data)
+        sbm = namedtuple('sbm', 'details H N_trajs epsilon Delta gamma lamb beta data')
+        sb = sbm(details, H, file_count, epsilon, Delta, gamma, lamb, beta, data)
     return sb 
 ##################################
 #  Extract FMO data 
