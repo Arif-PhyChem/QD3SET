@@ -70,11 +70,13 @@ output = qddset.extract() # extracting the data
  
  ```output.N_trajs``` to see the number of trajectories
  
- ```output.gamma``` to see the values of gamma (cutoff frequencies of bath)
+ ```output.gamma``` to see the values of gamma (cutoff frequencies of bath in units of cm-1)
  
- ```output.lamb``` to see the values of lambda (system bath coupling strengths)
+ ```output.lamb``` to see the values of lambda (system bath coupling strengths in units of cm-1)
  
- ```output.temp``` to see the values of temperature
+ ```output.temp``` to see the values of temperature in units of K (in case of FMO)
+ 
+  ```output.beta``` to see the values of inverse temperature in units of (a.u.) (in the case of spin-boson model)
  
  ```output.epsilon``` to see the values of energy difference in the case of spin-boson model
  
@@ -85,7 +87,7 @@ output = qddset.extract() # extracting the data
 
 ### To print the output 
 
-```print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp)```
+```print(output.details, output.H, output.N_trajs, output.gamma, output.lamb, output.temp, output.beta, output.epsilon, output.Delta)```
 
 ```data = list(output.data.values())```
 
