@@ -21,7 +21,7 @@ coupling strengths for all trajectories) and the \'output.beta\' (inverse temper
 corresponding to the ith value in the epsilon, Delta, gamma ,lamb and  temp (all parameters are in atomic units).\
  For more details please read our \
 article \n \" Arif Ullah, Luis E. Herrera Rodriguez, Pavlo O. Dral, and Alexei A. Kananenka, \
-QDDSET-1: A Quantum Dissipative Dynamics Dataset\" \n ***************************************************************"
+QD3SET-1: A Database woth Quantum Dissipative Dynamics Data sets https://doi.org/10.48550/arXiv.2301.12096\" \n ***************************************************************"
     return details
 
 #%%%%%%%%%%%%%%---HEOM_FMO---%%%%%%%%%%%%
@@ -50,7 +50,7 @@ and the \'output.temp\' (to see th temperature values for all trajectories).  \n
 corresponding to the ith initial_site, gamma, lamb and  temp (all parameters are in cm^-1).\
  For more details please read our \
 article \n \" Arif Ullah, Luis E. Herrera Rodriguez, Pavlo O. Dral, and Alexei A. Kananenka, \
-QDDSET-1: A Quantum Dissipative Dynamics Dataset\" \n ***************************************************************"
+QD3SET-1: A Database woth Quantum Dissipative Dynamics Data sets https://doi.org/10.48550/arXiv.2301.12096\" \n ***************************************************************"
     return details
 
 #%%%%%%%%%%%%%%---LTLME_FMO---%%%%%%%%%%%%
@@ -77,5 +77,5 @@ and the \'output.temp\' (to see th temperature values for all trajectories).  \n
 corresponding to the ith initial_site, gamma, lamb and  temp (all parameters are in cm^-1).\
  For more details please read our \
 article \n \" Arif Ullah, Luis E. Herrera Rodriguez, Pavlo O. Dral, and Alexei A. Kananenka, \
-QDDSET-1: A Quantum Dissipative Dynamics Dataset\" \n ***************************************************************"
+QD3SET-1: A Database woth Quantum Dissipative Dynamics Data sets https://doi.org/10.48550/arXiv.2301.12096\" \n ***************************************************************"
     return details
