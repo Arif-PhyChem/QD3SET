@@ -52,8 +52,8 @@ param = {'extr_choice': 'site-1',
    
 ### Pass the param
 ```
-qddset = qddset(**param) #  initializing parameters \
-output = qddset.extract() # extracting the data
+dataset = qddset(**param) #  initializing parameters \
+output = dataset.extract() # extracting the data
 ```
 ***********************
 ###  Output details
@@ -70,11 +70,13 @@ output = qddset.extract() # extracting the data
  
  ```output.N_trajs``` to see the number of trajectories
  
+ ```outout.initial_site``` to see the site with initial excitation (only in FMO complex) 
+ 
  ```output.gamma``` to see the values of gamma (cutoff frequencies of bath in units of cm-1)
  
  ```output.lamb``` to see the values of lambda (system bath coupling strengths in units of cm-1)
  
- ```output.temp``` to see the values of temperature in units of K (in case of FMO)
+ ```output.temp``` to see the values of temperature in units of K (in the case of FMO)
  
   ```output.beta``` to see the values of inverse temperature in units of (a.u.) (in the case of spin-boson model)
  
