@@ -22,11 +22,11 @@ def heom_sb(extr_choice: str, dataPath: str):
             for files in glob.glob(datapath):
                 file_count +=  1
         if extr_choice == 'sym':
-            datapath=dataPath + '/*epsilon-0*'
+            datapath=dataPath + '/*epsilon-0.0*'
             for files in glob.glob(datapath):
                 file_count +=  1
         if extr_choice == 'asym':
-            datapath=dataPath + '/*epsilon-1*'
+            datapath=dataPath + '/*epsilon-1.0*'
             for files in glob.glob(datapath):
                 file_count +=  1
         gamma = np.zeros((file_count), dtype=float)
