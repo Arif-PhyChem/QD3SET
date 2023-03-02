@@ -13,7 +13,7 @@ class qddset:
     """ Assign values to the parameters"""
     def __init__(self, **param):
         print('*****************************************')
-        print('QDDSET-1 contains trajectories propagated for reduced density matrix of spin-boson model \
+        print('QD3SET-1 contains trajectories propagated for reduced density matrix of spin-boson model \
 and FMO complex. Two methods were used: Local-thermalizing \
 Lindblad Equation of Motion (LTLME) and Hierarachical \
 Equations of Motion (HEOM). For more details, please read our \
