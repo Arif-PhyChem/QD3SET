@@ -37,7 +37,7 @@ QDDSET-1: A Quantum Dissipative Dynamics Dataset\" \n **************************
             print('Extracting data for "', self._method, '"')
         else:
             self._system = 'HEOM'
-            Print('As method type is not provided, default system choice "methodType: HEOM" is used')
+            print('As method type is not provided, default system choice "methodType: HEOM" is used')
         if param.get('dataPath') is not None:
             self._dataPath = param.get('dataPath')
             print('Extracting data from "', self._dataPath, '" directory')
