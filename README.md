@@ -3,7 +3,8 @@
 
 **In ```example.ipynb```, we demonstrate how to use this package for extraction of data**
 
-```From qd3set module import qddset class.```
+To use the package, we need to import qddset class from dataset.py module
+```from dataset import qddset```
 ### Parameters to pass are
  ```
  extr_choice: dtpe =  str 
