@@ -1,5 +1,5 @@
 # QD3SET-1: A Database with Quantum Dissipative Dynamics Data sets
-**This package is provided to make easy the extraction of data from our dataset QD3SET-1. Our QD3SET-1 contains trajectories propagated for reduced density matrix of spin-boson model and FMO complex. Two methods were used: Local-thermalizing Lindblad Equation of Motion (LTLME) and Hierarachical Equations of Motion (HEOM). For more details, please read our article " Arif Ullah, Luis E. Herrera Rodriguez, Pavlo O. Dral, and Alexei A. Kananenka, QD3SET-1: A Database woth Quantum Dissipative Dynamics Data sets https://doi.org/10.48550/arXiv.2301.12096**
+**This package is provided to make easy the extraction of data from our dataset QD3SET-1. Our QD3SET-1 contains trajectories propagated for reduced density matrix of spin-boson model and FMO complex. Two methods were used: Local-thermalizing Lindblad Equation of Motion (LTLME) and Hierarachical Equations of Motion (HEOM). For more details, please read our article " Arif Ullah, Luis E. Herrera Rodriguez, Pavlo O. Dral, and Alexei A. Kananenka, QD3SET-1: A Database with Quantum Dissipative Dynamics Data sets https://doi.org/10.48550/arXiv.2301.12096**
 
 **In ```example.ipynb```, we demonstrate how to use this package for extraction of data**
 
