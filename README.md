@@ -5,7 +5,7 @@
 
 **In ```example.ipynb```, we demonstrate how to use this package for extraction of data**
 
-### To import this package 
+## Basic Instructions
 
 To use the package, we need to import ```qddset``` class from ```dataset.py``` module
 
