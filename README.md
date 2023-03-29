@@ -20,20 +20,21 @@ To use the package, we need to import ```qddset``` class from ```dataset.py``` m
 ***********************
 
 ### ```extr_choice``` (extraction choice):
- We can pass multiple extraction choices. For instance, To extract data with site-1 as initial excitation, 
- pass ```extr_choice = 'site-1'```. For extraction of site-6 data, 
+ We can pass multiple extraction choices. For instance, To extract data from trajectories with initial excitation on site-1, 
+ pass ```extr_choice = 'site-1'```. For data-extraction from trajectories with initial excitation on site-6, 
  pass ```extr_choice = 'site-6'``` and similarly for site-8 data pass ```'site-8'```. 
- To extract all data, just pass ```extr_choice = 'all'```. The default choice is ```'cal_details'``` which 
+ To extract data from all trajectories, just pass ```extr_choice = 'all'```. The default choice is ```'cal_details'``` which 
  only shows calculation details. For spin-boson model, extr_choices are ```'all'```, ```'sym'```, ```'asym'```, and ```'cal_details'```.
 
 ### ```systemType``` (system type): 
 Pass ```'SB'``` for spin-boson and ```'FMO'``` for FMO complex
 
 ### ```methodType``` (method type):
-Pass ```'HEOM'``` or ```'LTLME'``` for the extraction of the corresponding data
+Pass ```'HEOM'``` or ```'LTLME'``` for the extraction of the corresponding data. If the trajectories are generated with LTLME method, we need to pass
+```LTLME``` and if with HEOM method, we need to pass ```HEOM```. Otherwise, it will give incorrect data. 
 
 ### ```FMOtype``` (Type of FMO):
- In our dataset, we have generated LTLME data with two Hamiltonians for both 
+ In our database, we have generated LTLME data with two different Hamiltonians for both 
  7-site and 8-site FMO. Here we represent them as ```I``` and ```II```. check ```output.details```
  for more
 
@@ -75,17 +76,17 @@ output = dataset.extract() # extracting the data
  
  ```outout.initial_site``` to see the site with initial excitation (only in FMO complex) 
  
- ```output.gamma``` to see the values of gamma (cutoff frequencies of bath in units of cm-1)
+ ```output.gamma``` to see the values of gamma (cutoff frequencies of bath in units of cm-1 for FMO complex and in atomic units for SB model)
  
- ```output.lamb``` to see the values of lambda (system bath coupling strengths in units of cm-1)
+ ```output.lamb``` to see the values of lambda (system bath coupling strengths in units of cm-1 for FMO complex and in atomic units for SB model)
  
  ```output.temp``` to see the values of temperature in units of K (in the case of FMO)
  
   ```output.beta``` to see the values of inverse temperature in units of (a.u.) (in the case of spin-boson model)
  
- ```output.epsilon``` to see the values of energy difference in the case of spin-boson model
+ ```output.epsilon``` to see the values of energy difference in the case of spin-boson model (in atomic units)
  
- ```output.Delta```  to see the values of coupling strength between the two states in spin-boson model
+ ```output.Delta```  to see the values of coupling strength between the two states in spin-boson model (in atomic units)
  
  ```data = list(output.data.values())``` makes the trajectories accessible. With ```data[i]```, we
  access the ith trajectory
@@ -96,4 +97,4 @@ output = dataset.extract() # extracting the data
 
 ```data = list(output.data.values())```
 
-```print(data[0])```  print the 1st trajectory
+```print(data[0])```  print the reduced density matrix from the first trajectory, and for other trajectories, just use data[1], data[2] and so on. 
